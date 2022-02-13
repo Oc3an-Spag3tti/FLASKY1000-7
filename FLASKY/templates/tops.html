@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="com">
+<head>
+  <meta charset="UTF-8">
+  <title>TOPS</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/tops.css') }}">
+ </head>
+<body>
+  <ul>
+    {% for top in table_tops %}
+      <li>{{ top[0] }} //{{ top[1] }}$//</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

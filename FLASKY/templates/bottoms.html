@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="com">
+<head>
+  <meta charset="UTF-8">
+  <title>BOTTOMS</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bottoms.css') }}">
+ </head>
+<body>
+  <ul>
+    {% for bottom in table_bottoms %}
+      <li>{{ bottom[0] }} //{{ bottom[1] }}$//</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

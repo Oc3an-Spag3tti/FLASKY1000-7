@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="com">
+<head>
+  <meta charset="UTF-8">
+  <title>ACCESSORIES</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/accessories.css') }}">
+ </head>
+<body>
+  <ul>
+    {% for accessory in table_accessories %}
+      <li>{{ accessory[0] }} //{{ accessory[1] }}$//</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

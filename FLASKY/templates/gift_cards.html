@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="com">
+<head>
+  <meta charset="UTF-8">
+  <title>GIFT CARDS</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/gift_cards.css') }}">
+ </head>
+<body>
+  <ul>
+    {% for gift_card in table_gift_cards %}
+      <li>{{ gift_card[0] }} //{{ gift_card[1] }}$//</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

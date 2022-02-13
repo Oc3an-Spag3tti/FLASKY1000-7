@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="com">
+<head>
+  <meta charset="UTF-8">
+  <title>BOTTOMS</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/jackets.css') }}">
+ </head>
+<body>
+  <ul>
+    {% for jacket in table_jackets %}
+      <li>{{ jacket[0] }} //{{ jacket[1] }}$//</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
